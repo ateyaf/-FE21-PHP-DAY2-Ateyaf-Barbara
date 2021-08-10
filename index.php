@@ -58,22 +58,35 @@
 
 
     #--------------------day-2-php- exer.4-------------------
-    function  area_volume_for_box($width, $height,$depth)
-    {
-        $area = $height*$width;
-        $volume = $height*$width*$depth;
-        return  array($area,$volume);
-    }
-    $return_value = area_volume_for_box(7,2,5);
+    // function  area_volume_for_box($width, $height,$depth)
+    // {
+    //     $area = $height*$width;
+    //     $volume = $height*$width*$depth;
+    //     return  array($area,$volume);
+    // }
+    // $return_value = area_volume_for_box(7,2,5);
    
 
-    echo '<h1> "The Area and Volume for our box   "</h1>';
-    echo  '<h2>"The Area for the box :" '.$return_value[0].' </h2>';
-    echo"</br>";
-    echo   '<h2> "The Volume for the box :" '.$return_value[1].' </h2>';
-    echo"</br>";
-     
+    // echo '<h1> "The Area and Volume for our box   "</h1>';
+    // echo  '<h2>"The Area for the box :" '.$return_value[0].' </h2>';
+    // echo"</br>";
+    // echo   '<h2> "The Volume for the box :" '.$return_value[1].' </h2>';
+    // echo"</br>";
 
+#--------------------day-2-php- exer.5-------------------
+
+function  Time_calculation($duration)
+{
+    $hours = (int)($duration / 60);
+    $minutes = $duration - ($hours * 60);
+    return  array($hours,$minutes);
+}
+    $return_value =Time_calculation(200);
+        echo '<h1> "we can have from the 200 minutes   "</h1>';
+        echo  '<h2> '.$return_value[0].'  Houre(s)  "  </h2>';
+        echo"</br>";
+        echo   '<h2> '.$return_value[1].'  Minutes   </h2>';
+        echo"</br>";
        ?>
        <i class="fa fa-refresh fa-spin fa-3x fa-fw" style="text-align: center; color:red; margin-left: 40%; margin-top:10% ; font-size:100pt;" >
        </i>
