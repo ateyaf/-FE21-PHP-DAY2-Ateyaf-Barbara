@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(175, 209, 142);
+}
+h1{
+    
+    text-align: center;
+    border: 10px solid black;
+}
+h2{
+    text-align: center;
+    
+}
+.fa-refresh{
+    justify-content: center;
+}
